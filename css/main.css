@@ -4,14 +4,172 @@
 
 1. General Rules
 2. General Styles
-3. Hero
-4. Introduction
-5. Icons Set
-6. Footer
+3. Header and Footer
+4. Hero
+5. Introduction
+6. Icons Set
 
 */
 
-/* ---General Rules */
+/* 1. ---General Rules */
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 130%;;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 2. ---General Styles */
 .hidden {
     display: none;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #FCF3E4;
+}
+
+/* 3. ---Header and Footer--- */
+header {
+    background-color: #761116;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header img {
+    height: 50px;
+}
+
+footer {
+    max-width: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    border-top: 1px solid #76111674;
+    margin: 0 auto;
+    color: #761116;
+    opacity: .75;
+}
+
+footer p {
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+footer p span {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* 4. ---Hero--- */
+#hero {
+    background-image: url(../images/bg-hero.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 150px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#hero h4 {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#hero h4 span {
+    background-color: #F4B641;
+    color: #761116;
+    text-shadow: 0px 0px 0px ;
+    padding: 5px;
+    font-weight: 800;
+}
+
+/* 5. ---Introduction--- */
+#intro {
+    background-image: url(../images/bg-intro.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+#intro img {
+    width: 200px;
+}
+
+#intro h4 {
+    color: #761116;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#intro-text {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #761116;
+    max-width: 750px;
+    line-height: 150%;
+}
+
+/* 6. ---Icons Set--- */
+#icons {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#icons-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 75px;
+    text-align: center;
+    justify-content: center;
+    color: #761116;
+}
+
+#icons-div h4 {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background-color: #F4B641;
+    color: #761116;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#icons-div p {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#icon-1, #icon-2, #icon-3, #icon-4, #icon-5, #icon-6 {
+    width: 300px;
 }
