@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="chocolate-flavor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#6B341C;}
 	.st1{fill:#7F3E28;}
 	.st2{opacity:0.25;}
 	.st3{fill:#FFFFFF;}
+	
+	<!-- Custom CSS for animations and other elements goes here-->
+
 </style>
+
+<!-- Javascript is scripted inside the .svg file -->
+<script>
+	const chocolateFlavor = document.querySelector("#chocolate-flavor");
+
+	function logIdChocolateFlavor() {
+		console.log("User clicked on " + this.id);
+	}
+
+	chocolateFlavor.addEventListener("click", logIdChocolateFlavor);
+</script>
+
 <g id="chocolate">
 	<path id="bar" class="st0" d="M1850.6,51.4L626.3,63.3c-105.6,1-190.4,87.5-189.4,193.1l19.4,2002.9
 		c1,105.6,87.5,190.4,193.1,189.4l1224.3-11.9c105.6-1,190.4-87.5,189.4-193.1l-19.4-2002.9C2042.6,135.1,1956.2,50.4,1850.6,51.4z"
@@ -158,17 +173,5 @@
 			</g>
 		</g>
 	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
 </g>
 </svg>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="squirrel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#C68554;}
@@ -13,7 +13,21 @@
 	.st7{fill:#F7D7BF;}
 	.st8{opacity:0.15;fill:#FFFFFF;}
 	.st9{opacity:0.15;fill:#F8F6F9;enable-background:new    ;}
+
+	<!-- Custom CSS for animations and other elements goes here-->
+
 </style>
+
+<!-- Javascript is scripted inside the .svg file -->
+<script>
+	const squirrel = document.querySelector("#squirrel");
+
+	function logIdSquirrel() {
+		console.log("User clicked on " + this.id);
+	}
+
+	squirrel.addEventListener("click", logIdSquirrel);
+</script>
 <g id="squirrel">
 	<path id="face" class="st0" d="M2433.2,1817.3c-1.8-108.3-30.4-210.1-79.7-298.9c-22-39.8-48.1-77-77.7-111
 		c-9.9-11.3-20.2-22.3-30.8-32.9c-25.4-25.4-53-48.7-82.5-69.5c3-32.7,4.6-66,4.6-99.6c0-3.5-0.1-6.8-0.1-10
