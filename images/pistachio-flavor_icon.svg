@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="pistachio-flavor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#95AD71;}
 	.st1{fill:#788E51;}
 	.st2{fill:#E2B78D;}
 	.st3{opacity:0.25;fill:#FFFFFF;}
+
+	<!-- Custom CSS for animations and other elements goes here-->
+
 </style>
+
+<!-- Javascript is scripted inside the .svg file -->
+<script>
+	const pistachioFlavor = document.querySelector("#pistachio-flavor");
+
+	function logIdPistachioFlavor() {
+		console.log("User clicked on " + this.id);
+	}
+
+	pistachioFlavor.addEventListener("click", logIdPistachioFlavor);
+</script>
+
 <g id="pistachio_back">
 	<g id="inside">
 		<path id="back_00000142147511406268388920000009456865791004620725_" class="st0" d="M693.2,881.6
@@ -63,16 +78,5 @@
 			C2105.3,1179,2102.2,1251.2,2093.6,1325.1z"/>
 	</g>
 </g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+
 </svg>
