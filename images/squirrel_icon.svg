@@ -5,7 +5,7 @@
 <style type="text/css">
 	.st0{fill:#C68554;}
 	.st1{opacity:0.5;fill:#FFFFFF;}
-	.st2{fill:#442A2A;}
+	.st2{fill:#1E0E0E;}
 	.st3{opacity:0.25;fill:#FFFFFF;}
 	.st4{opacity:0.5;fill:#FFFFFF;enable-background:new    ;}
 	.st5{opacity:0.5;fill:#E2B7BC;enable-background:new    ;}
@@ -15,7 +15,91 @@
 	.st9{opacity:0.15;fill:#F8F6F9;enable-background:new    ;}
 
 	<!-- Custom CSS for animations and other elements goes here-->
+	#squirrel {
+		cursor: pointer;
+	}
 
+	#squirrel:hover #squirrel {
+		animation: squirrel .6s ease-in-out infinite alternate;
+		transform-box: fill-box;
+		transform-origin: center;
+	}
+
+	#squirrel:hover #eyes {
+		animation: blink 2s ease-in-out infinite;
+		transform-box: fill-box;
+		transform-origin: center;
+	}
+
+	#squirrel:hover #nose {
+		animation: noseShrink 2s ease-in-out infinite;
+		transform-box: fill-box;
+		transform-origin: bottom;
+	}
+
+	#squirrel:hover .teeth  {
+		animation: noseShrink 2s ease-in-out infinite;
+		transform-box: fill-box;
+		transform-origin: bottom;
+	}
+	
+	#squirrel:hover #face {
+		fill: #AA3A3B;
+	}
+
+	#squirrel:hover .mouth_1 {
+		fill: #D6AEAE;
+	}
+
+	#squirrel:hover .st5 {
+		fill: #FFd27c;
+		opacity: .3;
+	}
+
+	#face {
+		transition: .2s ease-in-out fill;
+	}
+
+	.mouth_1 {
+		transition: .2s ease-in-out fill;
+	}
+
+	.st5 {
+		transition: .2s ease-in-out fill;
+	}
+
+	@keyframes blink {
+		50% {transform: rotateX(0deg)}
+		55% {transform: rotateX(0deg)}
+		60% {transform: rotateX(100deg)}
+		65% {transform: rotateX(0deg)}
+		75% {transform: rotateX(0deg)}
+		80% {transform: rotateX(100deg)}
+		100% {transform: rotateX(0deg)}
+	}
+
+	@keyframes squirrel {
+		0% {
+			scale: 100%;
+		}
+		100% {
+			scale: 95%;
+		}
+	}
+
+	@keyframes noseShrink {
+		0% {transform: translateY(0)}
+		10% {transform: translateY(-40px)}
+		15% {transform: translateY(-50px)}
+		20% {transform: translateY(0)}
+		30% {transform: translateY(-40px)}
+		35% {transform: translateY(-50px)}
+		45% {transform: translateY(0)}
+		50% {transform: translateY(-40px)}
+		55% {transform: translateY(-50px)}
+		65% {transform: translateY(0)}
+		100% {transform: translateY(0)}
+	}
 </style>
 
 <!-- Javascript is scripted inside the .svg file -->
@@ -78,10 +162,10 @@
 		<ellipse class="st5" cx="2150" cy="1778" rx="185.2" ry="213.5"/>
 	</g>
 	<g id="mouth">
-		<path class="st6" d="M1363.9,1999.9h-76.4c-13.6,0-71.4,0-85.3,0h-76.4c-18,0-32.6,25.1-32.6,56v169.6c0,30.9,14.6,56,32.6,56
+		<path class="st6 teeth" d="M1363.9,1999.9h-76.4c-13.6,0-71.4,0-85.3,0h-76.4c-18,0-32.6,25.1-32.6,56v169.6c0,30.9,14.6,56,32.6,56
 			h76.4c18,0,42.1-32.5,42.1-32.5s25.2,32.5,43.2,32.5h76.4c18,0,32.6-25.1,32.6-56v-169.6C1396.5,2025,1381.9,1999.9,1363.9,1999.9
 			z"/>
-		<path class="st7" d="M1349.8,1766.1c-46.6,12.9-85.3,32.5-107.6,59c-21.6-25.7-58.7-44.9-103.5-57.8
+		<path class="st7 mouth_1" d="M1349.8,1766.1c-46.6,12.9-85.3,32.5-107.6,59c-21.6-25.7-58.7-44.9-103.5-57.8
 			c-162.2-46.7-425.9-9.4-425.9,111.9c0,175.1,123.1,317,275,317c2.1,0,4.2,0,6.2-0.1c112.1-2.9,207.6-83.1,248.1-196.2
 			c40.9,114.3,138.1,195.1,251.8,196.3l0,0c0.8,0,1.7,0,2.5,0c151.9,0,275-141.9,275-317C1771.5,1758.9,1512.3,1721.3,1349.8,1766.1
 			z"/>
