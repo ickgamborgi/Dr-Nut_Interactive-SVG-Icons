@@ -12,6 +12,10 @@
 */
 
 /* 1. ---General Rules */
+* {
+    box-sizing: border-box;
+}
+
 img, embed, object, video, picture {
     max-width: 100%;
 }
@@ -121,7 +125,7 @@ footer p span {
 /* 4. ---Hero--- */
 #hero {
     background-image: url(../images/bg-hero.jpg);
-    background-position: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     padding-left: 50px;
     padding-right: 50px;
@@ -150,7 +154,7 @@ footer p span {
 #intro {
     background-image: url(../images/bg-intro.jpg);
     background-attachment: fixed;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -262,6 +266,6 @@ footer p span {
 }
 
 object {
-    height: 200px;
-    margin-bottom: 50px;
+    width: 200px;
+    margin-bottom: 25px;
 }
