@@ -70,11 +70,6 @@
 			transform: rotateZ(5deg);
 		}
 	}
-
-
-
-
-
 </style>
 
 <!-- Javascript is scripted inside the .svg file -->
